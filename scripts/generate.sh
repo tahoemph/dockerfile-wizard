@@ -135,7 +135,7 @@ fi
 
 # Dutchie specific packages
 echo "# install apt https transport
-RUN apt-get install apt-transport-https"
+RUN apt-get -y install apt-transport-https"
 
 echo "# install meteor
 RUN curl https://install.meteor.com/ | sh"
@@ -147,4 +147,4 @@ echo "# install yarn source list
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list"
 
 echo "# install yarn apt
-RUN apt-get update && apt-get install yarn"
+RUN apt-get update && apt-get -y install yarn"
