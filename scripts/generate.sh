@@ -133,5 +133,11 @@ RUN apt-get -y install libgconf-2-4 \
   && chmod +x /usr/local/bin/chromedriver"
 fi
 
+# Dutchie specific packages
 echo "# install meteor
 RUN curl https://install.meteor.com/ | sh"
+
+echo "# install yarn
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - \
+  && echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list \
+  && sudo apt-get update && sudo apt-get install yarn"
