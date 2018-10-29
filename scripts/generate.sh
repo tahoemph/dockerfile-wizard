@@ -135,7 +135,7 @@ fi
 
 # Dutchie specific packages
 echo "# install apt https transport
-RUN sudo apt-get install apt-transport-https"
+RUN apt-get install apt-transport-https"
 
 echo "# install meteor
 RUN curl https://install.meteor.com/ | sh"
