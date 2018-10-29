@@ -134,6 +134,9 @@ RUN apt-get -y install libgconf-2-4 \
 fi
 
 # Dutchie specific packages
+echo "# install apt https transport
+RUN sudo apt-get install apt-transport-https"
+
 echo "# install meteor
 RUN curl https://install.meteor.com/ | sh"
 
