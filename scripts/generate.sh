@@ -132,6 +132,3 @@ RUN apt-get -y install libgconf-2-4 \
   && mv chromedriver /usr/local/bin/chromedriver \
   && chmod +x /usr/local/bin/chromedriver"
 fi
-
-echo "# install meteor
-RUN curl https://install.meteor.com/ | sh"
